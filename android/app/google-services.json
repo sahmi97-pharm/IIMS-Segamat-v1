@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "672505210579",
+    "project_id": "rxlink-d54ee",
+    "storage_bucket": "rxlink-d54ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672505210579:android:1a9461e5d75ea6a9841626",
+        "android_client_info": {
+          "package_name": "com.mycompany.hyperlinkipd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9dVR-pMtsRKXhhXSo62ib8c1L1SLlOTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

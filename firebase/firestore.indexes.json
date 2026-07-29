@@ -1,0 +1,122 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "memos",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "is_pinned",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "memo_jabatan",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "is_pinned",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "memo_last_update",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "locations",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "type",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "staff",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isActive",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ubat_tambahan",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "operational_date",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "location_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "create_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "locations_new",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "category",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "location_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "ubat_tambahan",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "location_ref",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "operational_date",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "running_number",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "fcm_tokens",
+      "fieldPath": "fcm_token",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}
