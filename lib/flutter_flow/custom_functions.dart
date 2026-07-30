@@ -475,5 +475,19 @@ String getDefaultPerkaraOption(
   bool? hasUbatTambahan,
 ) {
   final options = getBottomOptions(hasTroliUbat, hasUbatTambahan);
-  return options.first;
+
+  // Check if the list actually has items before grabbing the first one
+  if (options != null && options.isNotEmpty) {
+    return options.first;
+  } else {
+    return ''; // Returns a blank string if there are no options available
+  }
+}
+
+List<String> getUniqueCategories(List<IpdRujukanRecord> records) {
+  return records
+      .map((record) => record.category)
+      .whereType<String>()
+      .toSet()
+      .toList();
 }

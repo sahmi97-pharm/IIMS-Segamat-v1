@@ -35,6 +35,8 @@ class NotifikasiSettingModel extends FlutterFlowModel<NotifikasiSettingWidget> {
   // State field(s) for DropDown widget.
   String? dropDownValue2;
   FormFieldController<String>? dropDownValueController2;
+  // Stores action output result for [Custom Action - getBrowserToken] action in IconButton widget.
+  String? fetchedToken;
   // Stores action output result for [Cloud Function - unsubscribeFromWardTopic] action in IconButton widget.
   UnsubscribeFromWardTopicCloudFunctionCallResponse? unsubResult;
   // Stores action output result for [Firestore Query - Query a collection] action in IconButton widget.

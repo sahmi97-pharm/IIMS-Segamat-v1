@@ -706,7 +706,8 @@ class _NotifikasiSettingWidgetState extends State<NotifikasiSettingWidget> {
                         size: 24.0,
                       ),
                       onPressed: () async {
-                        _model.tokenToReset = FFAppState().fcmToken;
+                        _model.fetchedToken = await actions.getBrowserToken();
+                        _model.tokenToReset = _model.fetchedToken!;
                         _model.wardToReset = FFAppState().currentWardUnitName;
                         safeSetState(() {});
                         if ((_model.tokenToReset != '') &&
@@ -716,7 +717,7 @@ class _NotifikasiSettingWidgetState extends State<NotifikasiSettingWidget> {
                                     region: 'asia-southeast1')
                                 .httpsCallable('unsubscribeFromWardTopic')
                                 .call({
-                              "fcmToken": _model.tokenToReset,
+                              "fcmToken": _model.fetchedToken,
                               "wardName": _model.wardToReset,
                             });
                             _model.unsubResult =

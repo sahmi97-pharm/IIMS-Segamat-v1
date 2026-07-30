@@ -1611,7 +1611,7 @@ class _FarmasiDashboardWidgetState extends State<FarmasiDashboardWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         await launchURL(
-                                            'hsegamat2.moh.gov.my/quds');
+                                            'https://hsegamat2.moh.gov.my/quds/#/login');
                                       },
                                       child: Material(
                                         color: Colors.transparent,

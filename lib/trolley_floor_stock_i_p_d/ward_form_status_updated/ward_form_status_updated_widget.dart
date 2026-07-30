@@ -56,8 +56,8 @@ class _WardFormStatusUpdatedWidgetState
     _model.switchFSUValue = widget.locationRecord?.fsMedStatus == 'Pending' ||
         widget.locationRecord?.fsMedStatus == 'Complete';
     _model.switchFSCValue = widget.locationRecord?.fsMedStatus == 'Complete';
-    _model.switchFSUFValue = widget.locationRecord!.trolleyFridgeItem;
-    _model.switchFSUCBValue = widget.locationRecord!.tdkTUCoolbox;
+    _model.switchFSUFValue = widget.locationRecord!.fsMedFridgeItem;
+    _model.switchFSUCBValue = widget.locationRecord!.tdkFSUCoolbox;
     _model.switchfsubebValue = widget.locationRecord!.fsuBeb;
     _model.textController1 ??= TextEditingController(
         text: widget.locationRecord != null
